@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khushi Kumari | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Modern Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <div class="nav-logo">Khushi</div>
+        <ul class="nav-links">
+            <li><a href="#hero" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button id="mode-toggle" aria-label="Toggle light/dark mode">🌙</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section" style="background-image: url('HomeBackground.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="hero-content">
+            <h1>Khushi Kumari</h1>
+            <p class="hero-profession">Full-stack Web Developer</p>
+            <a href="#contact" class="cta-btn">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section reveal">
+        <div class="about-container">
+            <img src="profile.jpg" alt="Khushi Kumari" class="about-img" />
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I'm a passionate Full-stack Web Developer with a strong foundation in computer science and hands-on experience in building efficient, scalable, and user-friendly applications. I love solving problems and learning new technologies.</p>
+                <ul class="about-highlights">
+                    <li><strong>Location:</strong> Greater Noida, Uttar Pradesh</li>
+                    <li><strong>Email:</strong> <a href="mailto:khushikumari6509@gmail.com">khushikumari6509@gmail.com</a></li>
+                </ul>
+                <div class="about-links">
+                    <a href="#" target="_blank">GitHub</a>
+                    <a href="#" target="_blank">LeetCode</a>
+                    <a href="#" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section reveal">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">
+                <span class="skill-title">HTML</span>
+                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+            </div>
+            <div class="skill">
+                <span class="skill-title">CSS</span>
+                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+            </div>
+            <div class="skill">
+                <span class="skill-title">JavaScript</span>
+                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+            </div>
+            <div class="skill">
+                <span class="skill-title">Python</span>
+                <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+            </div>
+            <div class="skill">
+                <span class="skill-title">MySQL</span>
+                <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+            </div>
+            <div class="skill">
+                <span class="skill-title">Git</span>
+                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section reveal">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <!-- Project Card Example -->
+            <div class="project-card">
+                <img src="project1.jpg" alt="AI Desktop Partner (Jarvis)">
+                <div class="project-info">
+                    <h3>AI Desktop Partner (Jarvis)</h3>
+                    <p>Voice-controlled desktop assistant in Python, enabling 10+ voice commands to automate tasks like opening applications, sending emails, and conducting online searches.</p>
+                    <a href="#" class="project-link" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="project2.jpg" alt="Parallax Website">
+                <div class="project-info">
+                    <h3>Parallax Website</h3>
+                    <p>Scroll-based interactive website using layered parallax effects, enhancing user engagement and optimizing animations for performance and SEO.</p>
+                    <a href="#" class="project-link" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="project3.jpg" alt="Student Management System">
+                <div class="project-info">
+                    <h3>Student Management System</h3>
+                    <p>Desktop application to manage employee records with CRUD operations, integrated with MySQL and optimized for data retrieval and workflow efficiency.</p>
+                    <a href="#" class="project-link" target="_blank">View Project</a>
+                </div>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section reveal">
+        <h2>Contact</h2>
+        <form id="contact-form" novalidate>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <span class="form-error" id="name-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <span class="form-error" id="email-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <span class="form-error" id="message-error"></span>
+            </div>
+            <button type="submit" class="cta-btn">Send Message</button>
+            <span class="form-success" id="form-success"></span>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Khushi Kumari. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
